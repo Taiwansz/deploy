@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Matheus Sousa dos Santos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div id="main">
+        <nav>
+            <img src="{{ url_for('static', filename='images/M.png') }}" alt="Logo" class="nav-logo">
+            <div class="cntr-nav">
+                <a href="{{ url_for('home') }}">Início</a>
+                <a href="{{ url_for('sobre') }}">Sobre Mim</a>
+                <a href="{{ url_for('projetos') }}">Projetos</a>
+                <a href="{{ url_for('contato') }}">Contato</a>
+            </div>
+            <i class="ri-menu-fill"></i>
+        </nav>
+        <div class="one">
+            <h1>Matheus <br> Sousa dos Santos</h1>
+        </div>
+
+
+        <div class="two">
+            <div class="rght-two">
+                <h1>Sobre Mim</h1>
+                <p>Sou um estudante de Ciências da Computação na Unimax, apaixonado por tecnologia e desenvolvimento web. Em busca de novos desafios e oportunidades de crescimento profissional.</p>
+                <a href="{{ url_for('sobre') }}" class="btn-saiba-mais">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="three">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/CAUTION.png') }}" alt="Imagem Projeto 1" class="card-img">
+                <h1>Projeto 1</h1>
+                 <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
+                <p class="info-message" style="display: none;">Em breve será adicionado.</p>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/CAUTION.png') }}" alt="Imagem Projeto 2" class="card-img">
+                <h1>Projeto 2</h1>
+                 <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
+                <p class="info-message" style="display: none;">Em breve será adicionado.</p>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/CAUTION.png') }}" alt="Imagem Projeto 3" class="card-img">
+                <h1>Projeto 3</h1>
+                 <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
+                <p class="info-message" style="display: none;">Em breve será adicionado.</p>
+            </div>
+        </div>
+        <div class="four">
+            <h1>Entre em Contato</h1>
+            <p>Se você estiver interessado em trabalhar comigo ou apenas quiser conversar sobre tecnologia e desenvolvimento, não hesite em me enviar uma mensagem!</p>
+            <a href="{{ url_for('contato') }}" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/taiwan.sz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/Taiwansz" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/mth3us" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body> 
+</html>

@@ -1,0 +1,430 @@
+/* Definindo a animação */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Suas regras CSS existentes */
+@font-face {
+    font-family: 'Product Sans';
+    src: url('Fonts/Product Sans Regular.woff2') format('woff2'),
+         url('Fonts/Product Sans Regular.woff') format('woff'),
+         url('Fonts/Product Sans Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Product Sans B';
+    src: url('Fonts/Product Sans Bold.woff2') format('woff2'),
+         url('Fonts/Product Sans Bold.woff') format('woff'),
+         url('Fonts/Product Sans Bold.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Product Sans';
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+}
+
+#main {
+    flex: 1;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0 5vw;
+    z-index: 99;
+    background-color: #0D0C0D;
+    color: #F2F2F2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.cntr-nav {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex: 1;
+}
+
+nav a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: #F2F2F2;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    color: #A69E94;
+    transform: scale(1.1);
+}
+
+nav i {
+    font-size: 1.5vw;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #F2F2F2, #E0E0E0);
+}
+
+/* Outras regras CSS aqui */
+
+.one h1 {
+    font-size: 10vw;
+    font-family: 'Product Sans B';
+    color: #0D0C0D;
+    text-align: center;
+    animation: fadeInZoom 2s ease-out;
+}
+
+/* Restante do código CSS */
+
+.about {
+    background: linear-gradient(135deg, #F2F2F2, #E0E0E0);
+}
+
+.one.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Corrigido de left para flex-start */
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.one.contact h1 {
+    font-size: 10vw;
+    font-family: 'Product Sans B';
+    color: #0D0C0D;
+    text-align: left; /* Corrigido para alinhar o texto à esquerda */
+}
+
+/* Ajuste para a seção de contato */
+.contact-section {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 40px; /* Ajuste o padding se necessário */
+    height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
+    width: 50%; /* Define a largura da seção para 50% */
+    position: absolute; /* Remove a seção do fluxo normal do documento */
+    right: 0; /* Posiciona a seção à direita */
+    top: 0; /* Garante que a seção comece do topo */
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    max-width: 1000px; /* Ajusta a largura máxima do formulário para 1000px */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Alinhar o texto do formulário à esquerda */
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #0D0C0D;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D0D0D0;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: none;
+    color: #F2F2F2;
+    background-color: #0D0C0D;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #262526;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.two {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #E0E0E0, #D3D3D3);
+    padding: 0 10vw;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.lft-two, .rght-two {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.rght-two h1 {
+    color: #0D0C0D;
+    font-size: 5vw;
+}
+
+.rght-two p {
+    font-size: 1vw;
+    color: #0D0C0D;
+    width: 80%;
+}
+
+.btn-saiba-mais {
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    color: #F2F2F2;
+    background-color: #0D0C0D;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #262526;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #D3D3D3, #B0B0B0);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #B0B0B0, #A69E94);
+    padding: 20px;
+}
+
+.four h1 {
+    color: #0D0C0D;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.four p {
+    font-size: 1.2vw;
+    color: #0D0C0D;
+    text-align: center;
+}
+
+.four .btn-saiba-mais {
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 1.2em;
+    color: #0D0C0D;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0D0C0D;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0D0C0D;
+    color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #F2F2F2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+.info-message {
+    font-size: 1vw;
+    color: #0D0C0D;
+    margin-top: 10px;
+}
+
+.project-img {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .contact-section {
+        width: 100%; /* Ajusta a largura da seção de contato para 100% em telas menores */
+        position: relative; /* Remove a posição absoluta em telas menores */
+    }
+
+    .contact-form {
+        width: 90%; /* Ajusta a largura do formulário para 90% */
+        max-width: none; /* Remove a largura máxima em telas menores */
+    }
+
+    .nav-logo {
+        height: 40px; /* Ajusta o tamanho do logo para telas menores */
+    }
+
+    nav a {
+        font-size: 4vw; /* Ajusta o tamanho da fonte dos links de navegação em telas menores */
+    }
+
+    .one h1 {
+        font-size: 20vw; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .two, .three, .four {
+        flex-direction: column; /* Ajusta o layout das seções para telas menores */
+        padding: 0 5vw; /* Ajusta o padding para telas menores */
+    }
+
+    .lft-two, .rght-two {
+        width: 100%; /* Ajusta a largura das colunas para telas menores */
+        gap: 2vh; /* Ajusta o gap entre os elementos para telas menores */
+    }
+
+    .rght-two p {
+        font-size: 3vw; /* Ajusta o tamanho da fonte para telas menores */
+        width: 100%; /* Ajusta a largura do parágrafo para telas menores */
+    }
+
+    .card {
+        width: 80vw; /* Ajusta a largura dos cards para telas menores */
+        height: auto; /* Ajusta a altura dos cards para telas menores */
+    }
+
+    .four h1 {
+        font-size: 5vw; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .four p {
+        font-size: 3vw; /* Ajusta o tamanho da fonte para telas menores */
+    }
+}
+
+
