@@ -7,55 +7,32 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <nav>
-        <img src="{{ url_for('static', filename='images/M.png') }}" alt="Logo" class="nav-logo">
-        <div class="cntr-nav">
-            <a href="{{ url_for('home') }}">Início</a>
+    <header>
+        <nav>
+            <img src="{{ url_for('static', filename='images/M.png') }}" alt="Logo" class="nav-logo">
+            <div class="cntr-nav">
+                <a href="{{ url_for('home') }}">Início</a>
                 <a href="{{ url_for('sobre') }}">Sobre Mim</a>
                 <a href="{{ url_for('projetos') }}">Projetos</a>
-                <a href="{{ url_for('contato') }}">Contato</a>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </header>
 
     <main>
-       <section class="project-section">
-            <div class="two">
-                <div class="lft-two">
-                    <!-- Imagem removida -->
-                </div>
-                <div class="rght-two">
-                    <h1>Projeto 1</h1>
-                    <p>Os projetos estão em andamento e em breve terá atualizações aqui;.</p>
-                    <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
-                </div>
-            </div>
-        </section>
-
+        {% for i in range(1, 4) %}
         <section class="project-section">
             <div class="two">
                 <div class="lft-two">
-                    <!-- Imagem removida -->
-                </div>
-                <div class="rght-two">
-                    <h1>Projeto 2</h1>
-                    <p>Os projetos estão em andamento e em breve terá atualizações aqui;.</p>
-                    <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
-                </div>
-            </div>
-        </section>
 
-        <section class="project-section">
-            <div class="two">
-                <div class="lft-two">
-                    <!-- Imagem removida -->
                 </div>
                 <div class="rght-two">
-                    <h1>Projeto 3</h1>
-                    <p>Os projetos estão em andamento e em breve terá atualizações aqui;.</p>
+                    <h1>Projeto {{ i }}</h1>
+                    <p>Os projetos estão em andamento e em breve terão atualizações aqui.</p>
                     <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
                 </div>
             </div>
         </section>
+        {% endfor %}
     </main>
 
     <footer>
