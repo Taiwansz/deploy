@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="{{ url_for('static', filename='images/M.png') }}" alt="Logo" class="nav-logo">
+            <div class="cntr-nav">
+                <a href="{{ url_for('home') }}">Início</a>
+                <a href="{{ url_for('sobre') }}">Sobre Mim</a>
+                <a href="{{ url_for('projetos') }}">Projetos</a>
+                <a href="{{ url_for('contato') }}">Contato</a>
+            </div>
+            <i class="ri-menu-fill"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="one">
+            <h1>Sobre Mim</h1>
+        </div>
+        <div class="text">
+            <h2>Início da Jornada</h2>
+            <p>Minha fascinação por tecnologia começou cedo. Aos 12 anos, enquanto muitos dos meus colegas estavam se interessando por esportes ou atividades extracurriculares, eu me vi desmontando e remontando meu primeiro computador. Esse foi o primeiro vislumbre de um mundo onde eu poderia criar, modificar e entender as máquinas que me rodeavam. Esse interesse me levou a começar a aprender programação por conta própria, explorando linguagens como HTML e CSS, e logo me vi desenvolvendo meus primeiros sites.</p>
+            <h2>Formação Acadêmica</h2>
+            <p>Ao entrar no ensino médio, minha paixão pela tecnologia apenas cresceu. Decidi me aprofundar ainda mais e, após um rigoroso processo seletivo, ingressei no curso de Ciências da Computação na Universidade Federal de São Paulo (UFSP). Os primeiros anos foram um desafio, mas também uma oportunidade de mergulhar profundamente nos fundamentos da ciência da computação. Participei de diversas competições de programação e hackathons, onde minha equipe e eu conquistamos vários prêmios, o que foi um grande incentivo para continuar.</p>
+            <p>Durante a faculdade, trabalhei em projetos acadêmicos e de pesquisa. Um dos projetos mais marcantes foi o desenvolvimento de um sistema de recomendação baseado em aprendizado de máquina para a plataforma de e-commerce E-ShopPro. Esse projeto não apenas me proporcionou uma experiência prática em IA, mas também foi publicado na Conferência Brasileira de Inteligência Artificial (CBIA), o que foi um marco significativo na minha carreira.</p>
+            <h2>Experiência Profissional Inicial</h2>
+            <p>Ao concluir a graduação, tive a sorte de ser aceito para um estágio na Innovatech Solutions, uma das principais empresas de tecnologia do país. O estágio foi uma verdadeira imersão na indústria, onde trabalhei em projetos de desenvolvimento de software para clientes globais. Minha equipe e eu enfrentamos desafios complexos, como a integração de sistemas legados com novas soluções em nuvem. Essa experiência foi fundamental para meu desenvolvimento profissional, permitindo-me aprender com profissionais experientes e contribuir para projetos de grande impacto.</p>
+            <p>Durante o estágio, fui promovido a desenvolvedor júnior, onde minha responsabilidade aumentou significativamente. Trabalhei em uma equipe ágil, participando do ciclo completo de desenvolvimento de software, desde a concepção até a implementação e manutenção. A experiência foi desafiadora, mas extremamente gratificante, e me ensinou a importância da colaboração e da comunicação eficaz.</p>
+            <h2>Avanços na Carreira</h2>
+            <p>Com o passar dos anos, continuei a buscar novos desafios e oportunidades para crescer. Fui promovido a desenvolvedor pleno na Innovatech Solutions e, eventualmente, a líder de equipe. Em meu papel como líder, fui responsável por coordenar projetos complexos e liderar uma equipe de desenvolvedores em projetos inovadores, como a criação de um sistema de gerenciamento de dados para a gigante das telecomunicações, TeleData Inc. Esse projeto envolveu a integração de várias tecnologias emergentes e a implementação de soluções escaláveis e seguras.</p>
+            <h2>Empreendedorismo e Inovação</h2>
+            <p>Após vários anos de trabalho em grandes empresas, decidi seguir meu sonho de empreender e fundei minha própria startup de tecnologia, a TechFusion Labs. Inspirado por Steve Jobs e sua visão de criar produtos que combinam design e tecnologia, desenvolvi uma plataforma de análise de dados baseada em inteligência artificial, projetada para ajudar empresas a obter insights valiosos a partir de grandes volumes de dados. A startup enfrentou desafios significativos, como financiamento e concorrência, mas nosso trabalho árduo e inovação nos levaram a ser adquiridos pela DataVision Corp., uma gigante do setor.</p>
+            <h2>Contribuições e Mentoria</h2>
+            <p>Além das minhas atividades profissionais, sempre busquei dar de volta à comunidade tecnológica. Envolvi-me em programas de mentoria e educação, trabalhando com jovens talentos e promovendo a inclusão na tecnologia. Organizei e ministrei workshops sobre desenvolvimento de software, segurança cibernética e inovação tecnológica em instituições como a TechBridge Academy e a FutureTech Institute, compartilhando minha experiência e ajudando a formar a próxima geração de profissionais de TI.</p>
+            <p>Participei de conferências e painéis, discutindo tendências emergentes como blockchain, computação quântica e segurança cibernética. Esses eventos, como o Fórum Internacional de Tecnologia e Inovação (FITI) e o Congresso de Segurança Digital (CSD), não apenas me permitiram compartilhar meu conhecimento, mas também aprender com outros líderes da indústria e manter-me atualizado sobre as últimas inovações.</p>
+            <h2>Formação Contínua</h2>
+            <p>Reconhecendo a importância da educação contínua, continuei a buscar certificações e treinamentos em áreas avançadas da tecnologia. Obtive certificações em segurança cibernética pela CyberSec Institute, arquitetura de sistemas distribuídos pela CloudMaster Academy e desenvolvimento de aplicativos móveis pela MobileDev Pro. Essas certificações não só ampliaram meu conhecimento, mas também me prepararam para enfrentar os desafios mais complexos da indústria.</p>
+            <h2>Desafios e Superações</h2>
+            <p>Minha trajetória não foi isenta de desafios. Enfrentei períodos de grande pressão e complexidade, como a migração de sistemas críticos para novas plataformas e a implementação de soluções em ambientes altamente regulamentados. Enfrentei desafios semelhantes aos que Lee Byung-chul, fundador da Samsung, encontrou ao transformar uma pequena empresa de produtos eletrônicos em um conglomerado global, adaptando-se às mudanças rápidas do mercado e inovando constantemente. No entanto, esses desafios foram oportunidades valiosas de aprendizado e crescimento. Cada obstáculo superado fortaleceu minha capacidade de resolver problemas complexos e adaptá-los às necessidades dos clientes e às mudanças do mercado.</p>
+            <h2>Olhando para o Futuro</h2>
+            <p>Hoje, continuo a explorar novas fronteiras da tecnologia e a buscar soluções que possam transformar a maneira como vivemos e trabalhamos. Minha paixão por tecnologia permanece tão forte quanto no início, e estou sempre em busca de novos desafios e oportunidades de inovação.</p>
+            <p>Estou ansioso para enfrentar novos desafios e colaborar com outros profissionais apaixonados pela tecnologia. Se você deseja saber mais sobre minha trajetória, discutir possíveis colaborações ou explorar oportunidades de inovação, ficarei feliz em conversar. Vamos construir o futuro da tecnologia juntos!</p>
+            <br><br><p> Texto meramente ilustrativo</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/taiwan.sz/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/Taiwansz" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/mth3us" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
