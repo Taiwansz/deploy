@@ -14,5 +14,9 @@ def sobre():
 def projetos():
     return render_template('projetos.html')
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
