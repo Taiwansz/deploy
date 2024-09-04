@@ -23,18 +23,20 @@
         </div>
 
         <div class="two">
+            <img src="{{ url_for('static', filename='images/me.png') }}" alt="pph" class="two-photo">
+
             <div class="rght-two">
                 <h1>Sobre Mim</h1>
                 <p>Sou um estudante de Ciências da Computação na Unimax, apaixonado por tecnologia e desenvolvimento web. Em busca de novos desafios e oportunidades de crescimento profissional.</p>
                 <a href="{{ url_for('sobre') }}" class="btn-saiba-mais">Saiba Mais</a>
             </div>
         </div>
+
         <div class="three">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/CAUTION.png') }}" alt="Imagem Projeto 1" class="card-img">
+                <img src="{{ url_for('static', filename='images/PORTCAPA.png') }}" alt="Imagem Projeto 1" class="card-img">
                 <h1>Projeto 1</h1>
-                 <a href="javascript:void(0);" onclick="alert('Em breve, este projeto será acrescentado!')" class="btn-saiba-mais">Saiba Mais</a>
-                <p class="info-message" style="display: none;">Em breve será adicionado.</p>
+                    <a href="{{ url_for('portfolio') }}" class="btn-saiba-mais">Saiba Mais</a>
             </div>
             <div class="card">
                 <img src="{{ url_for('static', filename='images/CAUTION.png') }}" alt="Imagem Projeto 2" class="card-img">
